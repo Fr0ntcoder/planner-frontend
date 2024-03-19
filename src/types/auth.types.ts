@@ -16,3 +16,5 @@ export type TAuthResponse = {
 	accessToken: string
 	user: TUser
 }
+
+export type TypeUserForm = Omit<TUser, 'id'> & { password?: string }

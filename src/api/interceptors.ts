@@ -5,8 +5,8 @@ import { errorCatch } from '@/api/error'
 import {
 	getAccessToken,
 	removeFromStorage,
-} from '@/services/auth/auth-token.service'
-import { authService } from '@/services/auth/auth.service'
+} from '@/services/auth-token.service'
+import { authService } from '@/services/auth.service'
 
 const options: CreateAxiosDefaults = {
 	baseURL: process.env.SERVER_URL,
