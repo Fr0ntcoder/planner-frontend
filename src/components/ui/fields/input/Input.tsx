@@ -1,11 +1,12 @@
-import clsx from 'clsx'
+import cn from 'clsx'
 import { ChangeEventHandler, forwardRef } from 'react'
 
-import styles from './Field.module.scss'
+import styles from './Input.module.scss'
 
 interface InputFieldProps {
 	id: string
 	label: string
+	className?: string
 	extra?: string
 	placeholder: string
 	variant?: string
@@ -16,13 +17,24 @@ interface InputFieldProps {
 	onChange?: ChangeEventHandler<HTMLInputElement>
 }
 
-export const Input = forwardRef<HTMLInputElement, InputFieldProps>(
+export const Field = forwardRef<HTMLInputElement, InputFieldProps>(
 	(
-		{ label, id, extra, type, placeholder, state, disabled, isNumber, ...rest },
+		{
+			label,
+			id,
+			extra,
+			type,
+			placeholder,
+			state,
+			disabled,
+			className,
+			isNumber,
+			...rest
+		},
 		ref
 	) => {
 		return (
-			<div className={`${extra}`}>
+			<div className={cn(styles.wrap, className)}>
 				<label htmlFor={id} className={styles.label}>
 					{label}
 				</label>
@@ -32,7 +44,7 @@ export const Input = forwardRef<HTMLInputElement, InputFieldProps>(
 					type={type}
 					id={id}
 					placeholder={placeholder}
-					className={clsx(styles.input, {
+					className={cn(styles.input, {
 						[styles.disabled]: disabled === true,
 						[styles.error]: state === 'error',
 						[styles.success]: state === 'success',
@@ -57,4 +69,4 @@ export const Input = forwardRef<HTMLInputElement, InputFieldProps>(
 	}
 )
 
-Input.displayName = 'input'
+Field.displayName = 'field'

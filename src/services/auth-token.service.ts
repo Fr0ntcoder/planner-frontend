@@ -6,7 +6,6 @@ export enum EnumTokens {
 }
 export const getAccessToken = () => {
 	const accessToken = Cookies.get(EnumTokens.ACCESS_TOKEN)
-
 	return accessToken || null
 }
 

@@ -6,6 +6,10 @@ import { useState } from 'react'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 
+import { Button } from '@/components/ui/buttons/Button'
+import { Field } from '@/components/ui/fields/input/Input'
+import { Heading } from '@/components/ui/heading/Heading'
+
 import { TAuthForm } from '@/types/auth.types'
 
 import { DASHBOARD_PAGES } from '@/config/pages-url.config'
@@ -18,6 +22,7 @@ export function Auth() {
 	const { register, handleSubmit, reset } = useForm<TAuthForm>({
 		mode: 'onChange',
 	})
+
 	const [isLoginForm, setIsLoginForm] = useState(false)
 
 	const { push } = useRouter()
@@ -37,5 +42,35 @@ export function Auth() {
 		mutate(data)
 	}
 
-	return <form onSubmit={handleSubmit(onSubmit)} className={styles.form}></form>
+	return (
+		<div className={styles.root}>
+			<form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
+				<Heading title="Авторизация" className={styles.heading} />
+				<Field
+					type="email"
+					{...register('email', { required: 'Неверный email' })}
+					id="email"
+					label="Email"
+					placeholder="Введите email"
+					className={styles.input}
+				/>
+				<Field
+					type="password"
+					{...register('password', { required: 'Неверный пароль' })}
+					id="password"
+					label="Пароль"
+					placeholder="Введите пароль"
+					className={styles.input}
+				/>
+				<div className={styles.btns}>
+					<Button className={styles.btn} onClick={() => setIsLoginForm(true)}>
+						Войти
+					</Button>
+					<Button className={styles.btn} onClick={() => setIsLoginForm(false)}>
+						Зарегистрироваться
+					</Button>
+				</div>
+			</form>
+		</div>
+	)
 }

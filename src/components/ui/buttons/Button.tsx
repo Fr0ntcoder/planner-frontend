@@ -1,6 +1,8 @@
 import cn from 'clsx'
 import { ButtonHTMLAttributes, PropsWithChildren } from 'react'
 
+import styles from './Button.module.scss'
+
 type TButton = ButtonHTMLAttributes<HTMLButtonElement>
 
 export function Button({
@@ -9,7 +11,7 @@ export function Button({
 	...rest
 }: PropsWithChildren<TButton>) {
 	return (
-		<button className={cn(className)} {...rest}>
+		<button className={cn(styles.btn, className)} {...rest}>
 			{children}
 		</button>
 	)
