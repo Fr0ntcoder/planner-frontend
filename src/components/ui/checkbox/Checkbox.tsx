@@ -27,7 +27,7 @@ const Checkbox = (props: {
 		<input
 			id={id}
 			type="checkbox"
-			className={clsx(styles.checkbox, {
+			className={clsx(styles.checkbox, 'defaultCheckbox', {
 				[styles.red]: color === 'red',
 				[styles.blue]: color === 'blue',
 				[styles.green]: color === 'green',
