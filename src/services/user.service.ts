@@ -7,7 +7,7 @@ export type TProfileResponse = {
 	statistics: {
 		label: string
 		value: string
-	}
+	}[]
 }
 
 class UserService {
