@@ -9,7 +9,7 @@ export type TUser = {
 	email: string
 	workInterval?: number
 	breakInterval?: number
-	intervalCount?: number
+	intervalsCount?: number
 }
 
 export type TAuthResponse = {

@@ -1,9 +1,10 @@
 .btn {
+	font-size: 14px;
 	padding: 10px 20px;
 	transition: all 0.3s ease-in-out;
 	border: none;
 	border-radius: 5px;
-	background: none;
+	background: var(--primary);
 	cursor: pointer;
 	color: #fff;
 

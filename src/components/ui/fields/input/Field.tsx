@@ -1,7 +1,7 @@
 import cn from 'clsx'
 import { ChangeEventHandler, forwardRef } from 'react'
 
-import styles from './Input.module.scss'
+import styles from './Field.module.scss'
 
 interface InputFieldProps {
 	id: string

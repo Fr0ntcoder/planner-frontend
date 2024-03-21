@@ -2,13 +2,13 @@ import { Metadata } from 'next'
 
 import { NO_INDEX_PAGE } from '@/constants/seo.constants'
 
-import { Dashboard } from './Dashboard'
+import { Settings } from './Settings'
 
 export const metadata: Metadata = {
-	title: 'Панель задач',
+	title: 'Настройки',
 	...NO_INDEX_PAGE,
 }
 
-export default function DashboardPage() {
-	return <Dashboard />
+export default function SettingsPage() {
+	return <Settings />
 }
