@@ -368,3 +368,9 @@ h1,h2,h3,h4,h5,h6 {
 #__next {
    height: 100%;
 }
+
+button {
+   border: none;
+   background: none;
+   cursor: pointer;
+}

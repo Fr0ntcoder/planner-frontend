@@ -1,0 +1,27 @@
+.sidebar {
+	background: var(--third-dark);
+	border-right: 2px solid var(--border);
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 30px 15px 15px 15px;
+	border-bottom: 1px solid var(--third-light);
+
+	svg {
+		margin-right: 10px;
+		color: var(--primary);
+	}
+
+	&_text {
+		font-size: 14px;
+		font-weight: 600;
+	}
+}
+
+.btn {
+	display: block;
+	margin: 15px 0 5px auto;
+}

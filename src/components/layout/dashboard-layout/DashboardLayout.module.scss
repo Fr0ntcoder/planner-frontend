@@ -1,6 +1,11 @@
 .wrap {
 	display: grid;
+	height: 100%;
 	grid-template-columns: 1fr 6fr;
 	grid-column-gap: 30px;
 	padding-right: 30px;
+}
+.main {
+	position: relative;
+	margin-top: 30px;
 }
