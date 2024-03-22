@@ -3,10 +3,10 @@
 import { GanttChartSquare } from 'lucide-react'
 import Link from 'next/link'
 
-import { Menu } from '@/components/layout/dashboard-layout/dashboard-sidebar/menu/Menu'
 import { LogoutButton } from '@/components/ui/buttons/logout-button/LogoutButton'
 
 import styles from './DashboardSidebar.module.scss'
+import { Menu } from './menu/Menu'
 
 export function DashboardSidebar() {
 	return (

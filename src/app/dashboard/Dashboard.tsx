@@ -1,7 +1,7 @@
 import { Heading } from '@/components/ui/heading/Heading'
 
 import styles from './Dashboard.module.scss'
-import { Statistics } from './statistics/Statistics'
+import { Statistics } from './components/statistics/Statistics'
 
 export function Dashboard() {
 	return (

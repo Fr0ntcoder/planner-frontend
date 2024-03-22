@@ -11,8 +11,8 @@ import { TypeUserForm } from '@/types/auth.types'
 import { useProfile } from '@/hooks/useProfile'
 
 import styles from './Settings.module.scss'
-import { useInitialData } from '@/app/dashboard/settings/useInitialData'
-import { useUpdateSettings } from '@/app/dashboard/settings/useUpdateSettings'
+import { useInitialData } from '@/app/dashboard/settings/hooks/useInitialData'
+import { useUpdateSettings } from '@/app/dashboard/settings/hooks/useUpdateSettings'
 
 export function Settings() {
 	const { register, handleSubmit, reset } = useForm<TypeUserForm>({

@@ -1,9 +1,8 @@
 import { PropsWithChildren } from 'react'
 
-import { DashboardHeader } from '@/components/layout/dashboard-layout/dashboard-header/DashboardHeader'
-import { DashboardSidebar } from '@/components/layout/dashboard-layout/dashboard-sidebar/DashboardSidebar'
-
 import styles from './DashboardLayout.module.scss'
+import { DashboardHeader } from './dashboard-header/DashboardHeader'
+import { DashboardSidebar } from './dashboard-sidebar/DashboardSidebar'
 
 export default function DashboardLayout({
 	children,
