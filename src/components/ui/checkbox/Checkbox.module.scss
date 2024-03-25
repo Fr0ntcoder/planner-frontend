@@ -1,0 +1,30 @@
+.wrap {
+}
+
+.hidden {
+	display: none;
+}
+
+.checkbox {
+	cursor: pointer;
+
+	input:checked + .icon svg {
+		opacity: 0;
+	}
+}
+.icon {
+	display: flex;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #fff;
+	border-radius: 4px;
+
+	svg {
+		width: 15px;
+		height: 15px;
+		transition: all 0.3s ease-in-out;
+	}
+}

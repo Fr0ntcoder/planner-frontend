@@ -1,0 +1,40 @@
+.row {
+	display: grid;
+	grid-template-columns: 5fr 2fr 2fr 1fr;
+	align-items: center;
+	border-bottom: 1px solid var(--third-light);
+}
+.manipulate {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	padding: 15px 0;
+	border-right: 1px solid var(--third-light);
+}
+
+.grip {
+	display: flex;
+	align-items: center;
+	color: var(--third-light);
+}
+
+.datepicker {
+	position: relative;
+	padding: 15px 0 15px 10px;
+	border-right: 1px solid var(--third-light);
+}
+
+.select {
+	position: relative;
+	padding: 15px 0 15px 10px;
+	border-right: 1px solid var(--third-light);
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+
+	button {
+		color: var(--third-light);
+	}
+}

@@ -1,0 +1,9 @@
+.field {
+	background: none;
+	border: none;
+	color: #fff;
+
+	&:focus {
+		outline: none;
+	}
+}

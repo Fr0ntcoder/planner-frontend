@@ -1,0 +1,29 @@
+.badge {
+	display: flex;
+	font-size: 14px;
+	font-weight: 600;
+	align-items: center;
+	justify-content: center;
+	padding: 5px 10px;
+	border-radius: 5px;
+
+	&.default {
+		background: var(--third-light);
+		color: #fff;
+	}
+
+	&.high {
+		background: red;
+		color: #fff;
+	}
+
+	&.medium {
+		background: green;
+		color: #fff;
+	}
+
+	&.low {
+		background: orange;
+		color: #fff;
+	}
+}
