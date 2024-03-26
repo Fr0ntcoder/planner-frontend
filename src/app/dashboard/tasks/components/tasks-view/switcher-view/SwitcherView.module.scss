@@ -1,0 +1,16 @@
+.wrap {
+	display: flex;
+	margin-bottom: 30px;
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+	color: var(--third-light);
+	svg {
+		margin-right: 5px;
+	}
+	&.active {
+		color: #fff;
+	}
+}

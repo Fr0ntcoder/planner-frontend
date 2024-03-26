@@ -10,9 +10,10 @@ import { SingleSelect } from '@/components/ui/task-edit/single-select/SingleSele
 
 import type { TTaskResponse, TypeTaskFormState } from '@/types/task.types'
 
+import { useDeleteTask } from '../../../../hooks/useDeleteTask'
+import { useTaskDebounce } from '../../../../hooks/useTaskDebounce'
+
 import styles from './ListRow.module.scss'
-import { useDeleteTask } from '@/app/dashboard/tasks/hooks/useDeleteTask'
-import { useTaskDebounce } from '@/app/dashboard/tasks/hooks/useTaskDebounce'
 
 type TListRow = {
 	item: TTaskResponse

@@ -1,7 +1,7 @@
 import { Heading } from '@/components/ui/heading/Heading'
 
 import styles from './Tasks.module.scss'
-import { TasksView } from '@/app/dashboard/tasks/components/tasks-view/TasksView'
+import { TasksView } from './components/tasks-view/TasksView'
 
 export function Tasks() {
 	return (

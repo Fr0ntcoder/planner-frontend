@@ -1,0 +1,11 @@
+.column {
+	display: flex;
+	flex-direction: column;
+
+	.heading {
+		font-size: 18px;
+		font-weight: 600;
+		margin-bottom: 15px;
+		color: #fff;
+	}
+}

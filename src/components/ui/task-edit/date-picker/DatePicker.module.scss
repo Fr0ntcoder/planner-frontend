@@ -1,24 +1,25 @@
 .wrap {
 	position: relative;
 	display: block;
-}
 
-.date {
-	color: #fff;
-}
+	.date {
+		color: #fff;
+	}
 
-.picker {
-	position: absolute;
-	top: 0;
-	right: 0;
-	background: #000;
-	z-index: 999;
-}
+	.picker {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background: #000;
+		color: #fff;
+		z-index: 999;
+	}
 
-.btn {
-	position: absolute;
-	top: 50%;
-	right: 0;
-	transform: translateY(-50%);
-	color: #fff;
+	.btn {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+		color: #fff;
+	}
 }

@@ -1,0 +1,52 @@
+.card {
+	padding: 10px;
+	margin-bottom: 30px;
+	border: 1px solid var(--third-light);
+	border-radius: 5px;
+
+	.header {
+		margin-bottom: 20px;
+
+		.manipulate {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.grip {
+				order: 1;
+				padding: 0;
+				color: var(--third-light);
+			}
+
+			.checkbox {
+				margin-right: 5px;
+			}
+
+			.field {
+				margin-right: auto;
+			}
+		}
+	}
+
+	.body {
+		margin-bottom: 15px;
+
+		.datepicker {
+			margin-bottom: 15px;
+		}
+
+		.select {
+			position: relative;
+			margin-bottom: 10px;
+		}
+	}
+
+	.action {
+		display: flex;
+
+		.btn {
+			margin-left: auto;
+			color: var(--third-light);
+		}
+	}
+}

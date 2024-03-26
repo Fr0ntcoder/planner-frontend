@@ -9,7 +9,7 @@
 	cursor: pointer;
 
 	input:checked + .icon svg {
-		opacity: 0;
+		opacity: 1;
 	}
 }
 .icon {
@@ -26,5 +26,7 @@
 		width: 15px;
 		height: 15px;
 		transition: all 0.3s ease-in-out;
+		opacity: 0;
+		color: #fff;
 	}
 }

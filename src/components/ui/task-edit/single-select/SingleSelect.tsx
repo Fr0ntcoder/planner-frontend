@@ -35,7 +35,7 @@ export function SingleSelect({
 				}}
 			>
 				{getValue() ? (
-					<Badge variant="default">{getValue()}</Badge>
+					<Badge variant={getValue()}>{getValue()}</Badge>
 				) : (
 					<Badge variant="default">Выберите</Badge>
 				)}
